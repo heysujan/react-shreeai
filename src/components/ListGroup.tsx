@@ -9,11 +9,9 @@ function ListGroup({ searchQuery }) {
         const fetchData = async () => {
             setLoading(true);
             try {
-                // Replace 'YOUR_GOOGLE_API_KEY' and 'YOUR_CUSTOM_SEARCH_ENGINE_ID' with your actual values
-                const googleApiKey = 'AIzaSyCxpOz3PjbVvDlQiBkkk6z46DnBWzuLjzY';
-                const cx = 'a6a6e105bfb494c93';
-                const searchUrl = `https://www.googleapis.com/customsearch/v1?q=${encodeURIComponent(searchQuery)}&key=${googleApiKey}&cx=${cx}&searchType=image`;
-
+                const ShreeApiKey = ;
+                const shreecx = ;
+                const searchUrl = ;
                 const response = await axios.get(searchUrl);
                 setImageResults(response.data.items.slice(0, 4));
                 setLoading(false);
